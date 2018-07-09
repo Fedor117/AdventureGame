@@ -23,7 +23,7 @@ public class SceneController : MonoBehaviour
     {
         faderCanvasGroup.alpha = 1f;
 
-        //playerSaveData.Save (PlayerMovement.startingPositionKey, initialStartingPositionName);
+        playerSaveData.Save (PlayerMovement.startingPositionKey, initialStartingPositionName);
 
         yield return StartCoroutine (LoadSceneAndSetActive (startingSceneName));
 
